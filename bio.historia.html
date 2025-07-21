@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>Tela de Login</title>
+        <style>
+            body{
+                background-image:url(https://i.pinimg.com/736x/ea/46/b0/ea46b02a496e3ad301ae8ddea558969b.jpg);
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            .login-container {
+                background-color:rgba(255, 255, 255, 0.5);
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow:10px;
+            }
+            .login-container h1 {
+                text-align: center;
+                margin-bottom: 20px;
+                color: rgb(0, 0, 0);
+            }
+            .login-container input[type="text"],
+            .login-container input[type="password"] {
+                width: 100%;
+                padding: 10px;
+                margin: 10 px 0;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+            .login-container button {
+                width: 100%;
+                padding: 10px;
+                background-color:  #666;
+                border: none;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .login-container button:hover {
+                background-color: #45a049;
+            }
+            mens {
+                margin-top: 10px;
+                text-align: center;
+                color: #f4f5f6;
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="login-container">
+            <h1>Login</h1>
+        <form onsubmit="return validarLogin()">
+            <input type="text" id="usuario" placeholder="Usuario" required>
+            <br><br><input type="password" id="senha" placeholder="Senha" required>
+            <br><br><button type="submit">Entrar</button>
+            <div class="mens" id="mensagem"></div>
+        </form>
+        </div>
+        <script>
+            function validarLogin() {
+            const usuario = document.getElementById("usuario").value;
+            const senha = document.getElementById("senha").value;
+            const mensagem = document.getElementById("mensagem");
+
+
+
+
+
+
+
+
+            if (usuario === "bio.historia" && senha === "1234") {
+                mensagem.style.color = "yellow";
+                mensagem.textContent = "Login Autorizado";
+
+
+
+
+
+
+
+
+                setTimeout(() => {
+                    window.location.href = "bio.historia2.html";
+                }, 1000);
+                return false;
+            } else {
+                mensagem.style.color = "red";
+                mensagem.textContent = "Usuario ou senha incorreta. Tente novamente";
+                return false;
+            }
+        }
+        </script>
+    </body>
+<\htlm>
+
+
+
