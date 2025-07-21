@@ -54,21 +54,6 @@
     </head>
     <body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <div class="login-container">
             <h1>Login</h1>
         <form onsubmit="return validarLogin()">
@@ -83,26 +68,10 @@
             const usuario = document.getElementById("usuario").value;
             const senha = document.getElementById("senha").value;
             const mensagem = document.getElementById("mensagem");
-
-
-
-
-
-
-
-
             if (usuario === "bio.historia" && senha === "1234") {
                 mensagem.style.color = "yellow";
                 mensagem.textContent = "Login Autorizado";
-
-
-
-
-
-
-
-
-                setTimeout(() => {
+               setTimeout(() => {
                     window.location.href = "bio.historia2.html";
                 }, 1000);
                 return false;
@@ -114,7 +83,7 @@
         }
         </script>
     </body>
-<\html>
+</html>
 
 
 
